@@ -8,7 +8,7 @@ function App() {
   const[elementos, setElementos] = useState([
     {
       id: 1,
-      nombre: "Amarillo",
+      nombre: "'Amarillo'",
       contenedor: 1,
       tipo: 2
     },
@@ -96,7 +96,7 @@ function App() {
     setElementos([
       {
         id: 1,
-        nombre: "Amarillo",
+        nombre: "'Amarillo'",
         contenedor: 1,
         tipo: 2
       },
@@ -165,7 +165,7 @@ function App() {
       </div>
       <button onClick={e => validacion(e)}>Validar</button>
       {validado & alerta ?
-      <p>Inténtalo de nuevo</p>
+      <p>Ups, hay algunos errores. Recordá: las cadenas, los números y los booleanos son Primitivos, y los arreglos y los objetos son Complejos.</p>
       :
       <></>
       }
